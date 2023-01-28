@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'beauty' ;
+            src: url(fonts/Beauty-otf.otf), url(fonts/BeautyRegular-ttf.ttf);
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+            tipos de format()
+            -opentype (otf)
+            -truetype (ttf)
+            -embedded-opentype
+            -truetype-att (apple advanced typography)
+            -svg
+            */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        h1{
+            font-family: 'beauty', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá,Mundo!</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint quaerat error nemo autem quidem rem fugit itaque nesciunt consectetur, ad nihil nisi laborum vel laudantium dolores in quos dicta vitae.</p>
+    
+</body>
+</html>
