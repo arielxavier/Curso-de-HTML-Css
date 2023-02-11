@@ -7,7 +7,7 @@ Neste repositório foi adicionado as pastas de pdfs, exercicios propostos pelo G
 ### Para acessar o Projeto Android criado neste curso, clique <a href="https://arielxavier.github.io/projeto-android/">aqui</a>.
 
 
-<h1><img src="Animação.gif" alt="gif animado"> </img></h1>
+<h1><img src="Animação.gif" alt="gif animado"> </h1>
 
 vá até o repositório do <a href="https://github.com/arielxavier/projeto-android.git">Projeto Android</a>.
 
