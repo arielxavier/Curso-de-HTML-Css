@@ -11,23 +11,83 @@
     --fonte-padrao: arial, helvetica, sans-serif;
 }
 
-body {
-    background-color: white;
-    height: 98%;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html ,body {
+    min-height: 100vh;
+    background-color: darkgrey;
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    min-height: 240px;
+    padding top: 40px;
 }
 
-header h1 {
+header >h1 {
     font-family: var(--fonte-titulo);
+    font-size: 5em;
+    font-variant: small-caps;
+    padding-top: 50px;
+    margin-bottom: 10px;
 }
 
-header p {
+header >p {
     font-family: var(--fonte-padrao);
+    padding-bottom: 50px;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline
+}
+
+section{
+    font-family: var(--fonte-texto);
+    font-size: 2.2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height:2em;
+    
+   
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+   
+}
+
+section.imagem {
+   /*  background-image: url('modulo 03\desafios\d012\imagens\background001.jpg'); */
+   background-color: grey;
+   color: white;    
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 400px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+
