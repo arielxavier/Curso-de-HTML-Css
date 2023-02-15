@@ -8,7 +8,7 @@
 :root {
     --fonte-titulo: 'Passion one', 'cursive';
     --fonte-texto: 'Sriracha', 'cursive';
-    --fonte-padrao: arial, helvetica, sans-serif;
+    --fonte-padrao:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -19,6 +19,7 @@
 html ,body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte-padrao);
 }
 
 header {
@@ -31,7 +32,7 @@ header {
 
 header >h1 {
     font-family: var(--fonte-titulo);
-    font-size: 5em;
+    font-size: 10vw;
     font-variant: small-caps;
     padding-top: 50px;
     margin-bottom: 10px;
@@ -54,13 +55,15 @@ header a:hover, footer a:hover {
 
 section{
     font-family: var(--fonte-texto);
-    font-size: 2.2em;
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    line-height:2em;
-    
-   
+    line-height:2em;   
+}
+
+section >p{
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -70,14 +73,30 @@ section.normal{
 }
 
 section.imagem {
-   /*  background-image: url('modulo 03\desafios\d012\imagens\background001.jpg'); */
    background-color: grey;
    color: white;    
+   box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.753);
+   background-size: cover;
+   background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.274);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.507);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+
+}
+
+section#flor {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#carta{
+    background-image: url('../imagens/background002.jpg');
+    
 }
 
 
