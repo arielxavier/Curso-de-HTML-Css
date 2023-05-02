@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td:nth-child(2){
+            text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+    
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        /* td.num{
+            text-align: right;}
+         */
+
+         tbody > tr:nth-child(2n) {
+            background-color: lightblue;
+         }
+         
+
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+      
+    <!-- Anatomia para tabelas grandes 
+        TABLE
+            CAPTION
+            THEAD
+                tr, td, th
+            TBODY
+                tr, td, th
+            TFOOT
+                tr, td, th
+    -->
+
+    <!--Ex: 
+        <table>
+        	<thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        	</thead>
+
+        	<tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num"></td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num"></td>
+                </tr>
+		    </tbody>
+
+        	<tfoot>
+                <tr>
+                    <th>Total de Habitantes</th>
+                    <td class="num"><strong></strong></td>
+                </tr>
+        	</tfoot>
+
+    	</table>
+
+        Outra forma de alinhar todos os <td> à direita é usar a pseudo-classe CSS:nth-child( )
+        Ex:td:nth-child(2) {text-align: right}
+    -->
+
+   
+
+    <table>
+        <caption>População das Unidades Federativas </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt=""> São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16.615.526	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.659.023	</td>
+            </tr>
+            <tr>
+                <td> Paraná</td>
+                <td>11.835.379	</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11.088.065	</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td>9.051.113	</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8.936.431	</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8.442.962	</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7.762.154	</td>
+            </tr>
+            <tr>
+                <td> Goiás</td>
+                <td>6.950.976	</td>
+            </tr>
+            <tr>
+                <td> Maranhão</td>
+                <td>6.800.605	</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>4.108.508	</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>4.030.961	</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>3.952.262	</td>
+            </tr>
+            <tr>
+                <td> Mato Grosso</td>
+                <td>3.784.239	</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3.303.953	</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3.270.174	</td>
+            </tr>
+            <tr>
+                <td> Alagoas</td>
+                <td>3.125.254	</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>2.923.369	</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2.833.742	</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2.211.868	</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1.616.379	</td>
+            </tr>
+            <tr>
+                <td> Tocantins</td>
+                <td>1.584.306	</td>
+            </tr>
+            <tr>
+                <td> Acre</td>
+                <td>829.780	</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>774.268	</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>634.805	</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td><strong>207.883.699</strong></td>
+        </tfoot>
+
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perspiciatis culpa rerum nam dolorum, ullam labore, omnis iusto tenetur modi quae numquam. Assumenda, quae vel? Delectus tempora officia iste necessitatibus.
+    Est harum eaque, quidem obcaecati laudantium magnam voluptas laboriosam tempore quo illum, laborum quasi iusto, saepe illo sunt nam! Voluptatibus sapiente iusto cupiditate harum qui mollitia nam consequuntur amet aspernatur.
+    Repellat aliquid, obcaecati voluptate est ipsa doloribus perspiciatis atque eum fugit veritatis, minus non soluta voluptatibus cupiditate recusandae debitis numquam minima quasi ducimus sequi delectus officia ipsum! Adipisci, eligendi! Iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perspiciatis culpa rerum nam dolorum, ullam labore, omnis iusto tenetur modi quae numquam. Assumenda, quae vel? Delectus tempora officia iste necessitatibus.
+    Est harum eaque, quidem obcaecati laudantium magnam voluptas laboriosam tempore quo illum, laborum quasi iusto, saepe illo sunt nam! Voluptatibus sapiente iusto cupiditate harum qui mollitia nam consequuntur amet aspernatur.
+    Repellat aliquid, obcaecati voluptate est ipsa doloribus perspiciatis atque eum fugit veritatis, minus non soluta voluptatibus cupiditate recusandae debitis numquam minima quasi ducimus sequi delectus officia ipsum! Adipisci, eligendi! Iste.</p>
+    <p></p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perspiciatis culpa rerum nam dolorum, ullam labore, omnis iusto tenetur modi quae numquam. Assumenda, quae vel? Delectus tempora officia iste necessitatibus.
+    Est harum eaque, quidem obcaecati laudantium magnam voluptas laboriosam tempore quo illum, laborum quasi iusto, saepe illo sunt nam! Voluptatibus sapiente iusto cupiditate harum qui mollitia nam consequuntur amet aspernatur.
+    Repellat aliquid, obcaecati voluptate est ipsa doloribus perspiciatis atque eum fugit veritatis, minus non soluta voluptatibus cupiditate recusandae debitis numquam minima quasi ducimus sequi delectus officia ipsum! Adipisci, eligendi! Iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perspiciatis culpa rerum nam dolorum, ullam labore, omnis iusto tenetur modi quae numquam. Assumenda, quae vel? Delectus tempora officia iste necessitatibus.
+    Est harum eaque, quidem obcaecati laudantium magnam voluptas laboriosam tempore quo illum, laborum quasi iusto, saepe illo sunt nam! Voluptatibus sapiente iusto cupiditate harum qui mollitia nam consequuntur amet aspernatur.
+    Repellat aliquid, obcaecati voluptate est ipsa doloribus perspiciatis atque eum fugit veritatis, minus non soluta voluptatibus cupiditate recusandae debitis numquam minima quasi ducimus sequi delectus officia ipsum! Adipisci, eligendi! Iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perspiciatis culpa rerum nam dolorum, ullam labore, omnis iusto tenetur modi quae numquam. Assumenda, quae vel? Delectus tempora officia iste necessitatibus.
+    Est harum eaque, quidem obcaecati laudantium magnam voluptas laboriosam tempore quo illum, laborum quasi iusto, saepe illo sunt nam! Voluptatibus sapiente iusto cupiditate harum qui mollitia nam consequuntur amet aspernatur.
+    Repellat aliquid, obcaecati voluptate est ipsa doloribus perspiciatis atque eum fugit veritatis, minus non soluta voluptatibus cupiditate recusandae debitis numquam minima quasi ducimus sequi delectus officia ipsum! Adipisci, eligendi! Iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perspiciatis culpa rerum nam dolorum, ullam labore, omnis iusto tenetur modi quae numquam. Assumenda, quae vel? Delectus tempora officia iste necessitatibus.
+    Est harum eaque, quidem obcaecati laudantium magnam voluptas laboriosam tempore quo illum, laborum quasi iusto, saepe illo sunt nam! Voluptatibus sapiente iusto cupiditate harum qui mollitia nam consequuntur amet aspernatur.
+    Repellat aliquid, obcaecati voluptate est ipsa doloribus perspiciatis atque eum fugit veritatis, minus non soluta voluptatibus cupiditate recusandae debitis numquam minima quasi ducimus sequi delectus officia ipsum! Adipisci, eligendi! Iste.</p>
+    <p></p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perspiciatis culpa rerum nam dolorum, ullam labore, omnis iusto tenetur modi quae numquam. Assumenda, quae vel? Delectus tempora officia iste necessitatibus.
+    Est harum eaque, quidem obcaecati laudantium magnam voluptas laboriosam tempore quo illum, laborum quasi iusto, saepe illo sunt nam! Voluptatibus sapiente iusto cupiditate harum qui mollitia nam consequuntur amet aspernatur.
+    Repellat aliquid, obcaecati voluptate est ipsa doloribus perspiciatis atque eum fugit veritatis, minus non soluta voluptatibus cupiditate recusandae debitis numquam minima quasi ducimus sequi delectus officia ipsum! Adipisci, eligendi! Iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perspiciatis culpa rerum nam dolorum, ullam labore, omnis iusto tenetur modi quae numquam. Assumenda, quae vel? Delectus tempora officia iste necessitatibus.
+    Est harum eaque, quidem obcaecati laudantium magnam voluptas laboriosam tempore quo illum, laborum quasi iusto, saepe illo sunt nam! Voluptatibus sapiente iusto cupiditate harum qui mollitia nam consequuntur amet aspernatur.
+    Repellat aliquid, obcaecati voluptate est ipsa doloribus perspiciatis atque eum fugit veritatis, minus non soluta voluptatibus cupiditate recusandae debitis numquam minima quasi ducimus sequi delectus officia ipsum! Adipisci, eligendi! Iste.</p>
+
+</body>
+</html>
